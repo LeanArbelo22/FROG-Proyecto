@@ -1,0 +1,191 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    background-color: #45BB3A;
+}
+footer{
+    margin-top: 10px;
+}
+footer a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+    }
+
+    footer a:hover{
+      color: #45BB3A;
+    }
+
+/* PAGINA INICIO SESION */
+.form-container{ /* bloque formulario completo */
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    max-width: 470px;
+    background-color: rgba(34, 34, 34, 0.877);
+    border: 1px solid;
+    border-radius: 12px;
+}
+.froglog{ /* margen inferior de img logo */
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.logo{ /* texto Completa tus datos */
+    color: beige;
+    font-weight: 800;
+    text-shadow: -1px 1px 2px black; 
+}
+.user, .pass{ /* separacion entre email/cedula y contrase;a */
+    margin-bottom: 8px;
+}
+label{ /* estilo labels verdes */
+    color: #45BB3A;
+    font-weight: 800;
+    font-size: 17px;
+    padding: 3px;
+    text-shadow: -1px 1px 1px black;
+}
+input[type=email],[type=password],[type=text]{ /* estilos imputs redondeados */
+    border: 1px solid #45BB3A;
+    border-radius: 8px;
+}
+.check{
+    float: left;
+    margin-left: -25px;
+    margin-bottom: 5px
+}          
+.checkmark{
+    font-size: 13px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.reglog{ /* margen sup link registrate y boton */
+    margin-top: 15px;
+}
+.login{ /* estilo boton iniciar sesion */
+    background-color: #45BB3A;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.login:hover{ /* hover boton */
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 2px black;
+}
+.regis{ /* letra registrate */
+    font-size: 13px;
+    font-weight: bolder;
+    color: #45BB3A;
+    text-shadow: -1px 1px 2px black;
+}
+p a{ /* color de link registrate */
+    text-decoration: underline;
+    color: beige;
+}
+.regis a:hover{ /* hover link registro */
+    color:#45BB3A;
+    font-weight: bolder;
+  }
+
+
+  /* PAGINA REGISTRO */
+.sign{
+    margin-top: 190px;
+}
+
+.form-regis{
+    text-align: center;
+    max-width: 470px;
+    margin: auto;
+    padding: 15px;
+    background-color: rgba(34, 34, 34, 0.877);
+    border: 1px solid #45BB3A;
+    border-radius: 10px;
+    color: beige;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.formregistro h3, p{
+    text-shadow: -1px 1px 2px black;
+}
+
+.datos{
+      box-sizing: border-box;
+    }
+
+.REG {
+        display: inline-block;
+        border: 1px solid #45BB3A;
+    border-radius: 8px;
+        margin-bottom: 5px;
+        }
+
+.localidad{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+          }
+
+.barrios{
+    border: 1px solid #45BB3A;
+    border-radius: 8px;
+    padding: 5px;
+    width: 50%;
+}
+
+.terminos{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+ 
+  .terminos a:hover{
+    color: #45BB3A;
+  }
+
+.registerbtn{
+    background-color: #45BB3A;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;    
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  .registerbtn:hover{
+      box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 2px black;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
