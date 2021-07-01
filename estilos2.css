@@ -1,6 +1,6 @@
 body{
     background-color: #45BB3A;
-    min-width: calc(100vh - headerpx - footerpx)
+    min-width: calc(100vh - 100px - 100px)
 
 }
 footer a{
@@ -33,7 +33,9 @@ footer a{
     margin-right: auto;
     margin-bottom: 20px;
     background-color: rgba(34, 34, 34, 0.877)}
-
+.navv img {
+    padding: 10px;
+}
 .lista{
     font-size: 22px;
     }
@@ -50,14 +52,17 @@ li i:hover{
     text-shadow: 1px 1px 2px black;
 }
 .locales{
-    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card{
-    margin: 10px;
+    margin: 7px;
     padding-top: 7px;
     border: 2px solid rgb(0, 129, 17);
     border-radius: 10px;
+    background-color: rgba(34, 34, 34, 0.877);
+    color: white;
 }
 
 .card img{
@@ -65,11 +70,12 @@ li i:hover{
     border-radius: 5px;
 }
 
-@media screen and (min-width:250px) and (max-width:770px) {
+@media screen and (max-width:768px) {
 
-    .navv .item{
+    .item{
         display: none;
     }
 
     
 }
+
