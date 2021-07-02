@@ -1,7 +1,6 @@
 body{
     background-color: #45BB3A;
     min-width: calc(100vh - 100px - 100px);
-
 }
 footer a{
     text-decoration: none;
