@@ -5,7 +5,6 @@ body{
     display: flex;
     align-items: center;
     background-color: #45BB3A;
-    width: 100%;
 }
 footer{
     margin-top: 10px;
