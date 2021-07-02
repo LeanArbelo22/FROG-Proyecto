@@ -1,6 +1,7 @@
 body{
     background-color: #45BB3A;
-    min-width: calc(100vh - 100px - 100px)
+    min-width: calc(100vh - 100px - 100px);
+    width: 100%
 
 }
 footer a{
@@ -33,8 +34,8 @@ footer a{
     margin-right: auto;
     margin-bottom: 20px;
     background-color: rgba(34, 34, 34, 0.877)}
-.navv img {
-    padding: 2px;
+.navv {
+    padding: 5px 
 }
 .lista{
     font-size: 22px;
@@ -76,7 +77,15 @@ li i:hover{
     .item{
         display: none;
     }
+    .news-mail{
+        display: none;
+    }
 
     
 }
 
+@media screen and (max-width: 520px){
+    .lgo{
+        width: 70%;
+    }
+}

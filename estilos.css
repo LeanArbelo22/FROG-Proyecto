@@ -5,6 +5,7 @@ body{
     display: flex;
     align-items: center;
     background-color: #45BB3A;
+    width: 100%;
 }
 footer{
     margin-top: 10px;
@@ -34,11 +35,18 @@ footer a{
     margin-bottom: 5px;
     margin-top: 10px;
 }
+
 .logo{ /* texto Completa tus datos */
     color: beige;
     font-weight: 800;
     text-shadow: -1px 1px 2px black; 
 }
+@media screen and (max-width:350px){
+    .froglog{
+        width: 75%;
+    }
+    .logo p {font-size: 15px};
+};
 .user, .pass{ /* separacion entre email/cedula y contrase;a */
     margin-bottom: 8px;
 }
@@ -89,7 +97,10 @@ input[type=email],[type=password],[type=text]{ /* estilos imputs redondeados */
     color: #45BB3A;
     text-shadow: -1px 1px 2px black;
 }
-p a{ /* color de link registrate */
+.regis p {
+    margin-bottom: 0.5rem;
+}
+.regis a{ /* color de link registrate */
     text-decoration: underline;
     color: beige;
 }
@@ -97,6 +108,21 @@ p a{ /* color de link registrate */
     color:#45BB3A;
     font-weight: bolder;
   }
+
+  @media screen and (max-width: 500px){
+      .regis p {
+          display: none;
+      }
+      .sesion {
+          margin-bottom: 15px;
+      }
+      .regis a {
+          display: flex;
+          justify-content: center;
+          margin-top: 19px;
+      }
+  }
+
 
 
   /* PAGINA REGISTRO */
