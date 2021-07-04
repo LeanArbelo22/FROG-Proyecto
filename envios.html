@@ -15,7 +15,7 @@
         <div class="container">
         
             <a class="navbar-brand" href="./index.html">
-                <img class="lgo" src="/img/logo_frog.png" width="150" heigth="800"alt="froglogo">
+                <img class="xlo" src="/img/logo_frog.png" width="150" heigth="800"alt="froglogo">
             </a>
             
             <ul class="navbar-nav lista">
@@ -57,8 +57,91 @@
             </ul>
         </div>
     </nav>
+<main class="container bg-white mb-4 productos">
+<div class="row articulos pt-4 pb-4 d-flex justify-content-center"> 
+  <article class= "col-auto">
+    <img src="./img/harina.jpg" alt="">
+    <p>Harina Villa Blanca 0000 1kg</p>
+    <p>$41</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Harina Villa Blanca 0000 1kg', 41)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/aceite.jpg" alt="">
+    <p>Aceite Altoleico Optimo 1lt</p>
+    <p>$115</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Aceite Altoleico Optimo 980ml', 115)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/arroz.jpg" alt="">
+    <p>Arroz Saman Blanco 1kg</p>
+    <p>$50</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Arroz Saman Blanco 1kg', 50)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/fideos.jpg" alt="">
+    <p>Spagethi Barilla nro. 7</p>
+    <p>$88</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Spagethi Barilla nro. 7', 88)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/maizena.jpg" alt="">
+    <p>Maizena 400gr</p>
+    <p>$65</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Maizena 400gr', 65)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/caldo.jpg" alt="">
+    <p>Caldos Knoor Verdura x12un</p>
+    <p>$65</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Caldos Knoor Verdura x12un', 70)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/sopa.jpg" alt="">
+    <p>Sopa Gourmet Calabaza 1lt</p>
+    <p>$90</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Sopa Gourmet Calabaza 1lt', 90)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/arvejas.jpg" alt="">
+    <p>Lata Arvejas Rio 380gr</p>
+    <p>$45</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Lata Arvejas Rio 380gr', 45)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/" alt="">
+    <p>Nissin Ramen</p>
+    <p>$21</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Nissin Ramen', 21)"><i class="bi bi-cart4"></i></button>
+  </article>
+  <article class= "col-auto">
+    <img src="./img/" alt="">
+    <p>Pure de papas Gourmet</p>
+    <p>$38</p>
+    <button class="btn btn-primary agregar" onclick="agregarProducto('Pure de papas Gourmet', 38)"><i class="bi bi-cart4"></i></button>
+  </article>
+</div>
+<div class="row pb-4">
+  <button class="col-auto ms-5 btn btn-outline-dark" onclick="mostrarProductos()">
+  Productos agregados al carrito:
+  (<span id="total-productos">0</span>)
+  </button>
+</div>
+<div class="row">
+<div id="carrito">
+</div>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+<button class="col-auto me-5 btn" id="botonCompra"> <!-- onclick... -->
+  Comprar
+  </button>
+</div>
+</div>
 
-    <footer id="fot" class="container-fluid">
+
+
+
+
+</main>
+<footer id="fot" class="container-fluid">
   <div class="container">
       <div class="col pt-4"></div>
       <div	class="row ms-md-5 ms-sm-1">
@@ -66,14 +149,14 @@
           <input type="email" id="email" class="corr form-control"/>
           <label class="form-label labb" for="email" aria-placeholder="Correo Electronico">Correo Electronico</label>
         </div>
-        <div	class="col-3 ml-1 news-mail">
+        <div	class="col-3	ml-1 news-mail">
           <button type="submit" class="btn btn-outline-light p-2 mb-2" style="font-size: 12px; background-color: #45BB3A; font-weight: 400;">
             Suscribete a nuestro newsletter
         </button>
         </div>
         <div class="separador col-4 col-md-2"></div>
-        <div	class="col-4 d-inline-flex justify-content-center d-md-inline mt-1 mb-1">
-            <a class="btn btn-outline-light btn-floating ml-1" href="https://www.facebook.com/FrogMaxishop/" role="button"
+        <div	class="col-4 d-inline-flex justify-content-center d-md-inline mt-1 mb-1 ">
+          <a class="btn btn-outline-light btn-floating ml-1" href="https://www.facebook.com/FrogMaxishop/" role="button"
           ><i class="bi bi-facebook"></i></a>
         <a class="btn btn-outline-light btn-floating ml-1 " href="https://www.instagram.com/frogmaxishop/" role="button"
           ><i class="bi bi-instagram"></i></a>
@@ -87,5 +170,10 @@
         </div>
   </footer>
     
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="codigo.js"></script>
+<script src="./js/carrito.js"></script>
 </body>
 </html>
