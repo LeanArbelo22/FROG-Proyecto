@@ -15,7 +15,6 @@ function agregarProducto(nombre, precio){
     totalProductos = totalProductos + 1;
 
     document.getElementById('total-productos').innerHTML = `${totalProductos}`
-
 }
 
 var totalCompra = 0;
