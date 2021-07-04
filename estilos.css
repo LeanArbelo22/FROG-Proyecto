@@ -1,6 +1,6 @@
 html, body {
     width: auto;
-    height: auto;
+    height: 100%;
 }/* BORRAR SI FALLA */
 body{
     display: flex;
@@ -12,14 +12,12 @@ footer{
 }
 footer a{
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 650;
     color: gray;
-    }
-
-    footer a:hover{
-      color: #45BB3A;
-    }
+    } 
+      footer a:hover{
+      color: #45BB3A;}
 
 /* PAGINA INICIO SESION */
 .form-container{ /* bloque formulario completo */
@@ -175,6 +173,10 @@ input[type=email],[type=password],[type=text]{ /* estilos imputs redondeados */
     font-size: 13px;
     margin-top: 5px;
     margin-bottom: 10px;
+  }
+
+  .terminos a{
+      color:white
   }
  
   .terminos a:hover{

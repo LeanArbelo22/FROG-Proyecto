@@ -8,7 +8,7 @@ function agregarProducto(nombre, precio){
         precio: precio
     };
 
-    console.info(`Producto agregado: ${nombre} ${precio}`)
+    console.info(`Producto agregado: ${nombre} ${precio}`);
 
     carrito.push(producto);
 
@@ -32,9 +32,10 @@ function mostrarProductos(){
     });
 
     
-    compra.innerHTML = '<ul>'+ lista + '</ul>' + `<h5 style="text-align: center">TOTAL $${totalCompra}</h5>`;
+    compra.innerHTML = '<ul>'+ lista + '</ul>' + `<h5 style="text-align: center">TOTAL $${totalCompra}</h5>`+ '<button class="col-auto col-sm-4 offset-4 mb-4 btn" id="botonCompra" onclick="exito()">'+`   Comprar   `+'</button>'
 
     console.log(totalCompra)
+
 };
 
 
