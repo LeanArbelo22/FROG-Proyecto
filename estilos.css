@@ -1,6 +1,7 @@
-html, body{
-    height: 100%;
-}
+html, body {
+    width: auto;
+    height: auto;
+}/* BORRAR SI FALLA */
 body{
     display: flex;
     align-items: center;

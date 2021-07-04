@@ -1,3 +1,7 @@
+html, body {
+    width: auto;
+    height: auto;
+}/* BORRAR SI FALLA */
 body{
     background-color: #45BB3A;
     min-width: calc(100vh - 100px - 100px);
