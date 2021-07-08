@@ -4,7 +4,7 @@ html, body {
 }/* BORRAR SI FALLA */
 body{
     background-color: #45BB3A;
-    min-width: calc(100vh - 200px - 100px); /* revisar si hay fallos*/
+    /* min-width: calc(100vh - 200px - 100px); /* ESTE ERA EL FALLO QUE LE DABA ZOOM A LA PAGINA*/ 
 }
 /* FOOTER */
 footer a{
