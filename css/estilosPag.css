@@ -4,7 +4,7 @@ html, body {
 }/* BORRAR SI FALLA */
 body{
     background-color: #45BB3A;
-    min-width: calc(100vh - 100px - 100px);
+    min-width: calc(100vh - 200px - 100px); /* revisar si hay fallos*/
 }
 /* FOOTER */
 footer a{
@@ -35,13 +35,11 @@ footer a{
 /* HEADER */
 .navv{width: 100%;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-bottom: 20px;
     background-color: rgba(34, 34, 34, 0.877)}
-.navv {
-    padding: 5px 
-}
+
 .lista{
     font-size: 22px;
     }
@@ -126,7 +124,7 @@ li i:hover{
 }
 /* imagenes productos */
 article img{
-    width: 220px;
+    width: auto;
     height: 220px;
 margin-bottom: 1px;
 }
@@ -173,3 +171,15 @@ article {
   .precioProducto{
       font-weight: 500;
   }
+
+/* pagina frogCard */
+.frogui{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: auto;
+}
+#func-puntos{
+   width: 100%;
+   height: auto;
+}

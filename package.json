@@ -1,0 +1,26 @@
+{
+  "name": "frog_1.1",
+  "version": "1.0.0",
+  "description": "'Proyecto cursada: pagina envios FROG'",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeanArbelo22/FROG-Proyecto.git"
+  },
+  "author": "Leandro Arbelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeanArbelo22/FROG-Proyecto/issues"
+  },
+  "homepage": "https://github.com/LeanArbelo22/FROG-Proyecto#readme"
+}
