@@ -1,10 +1,12 @@
 console.log('App iniciada correctamente');
 
+const pass = require('./usuario');
+
 var mysql = require('mysql2');
 var conexion = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '220896',
+    password: pass.getPass(),
     database: 'FROG'
 });
 
