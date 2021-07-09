@@ -1,5 +1,5 @@
 html, body {
-    width: auto;
+    width: 100%;
     height: 100%;
 }/* BORRAR SI FALLA */
 body{
@@ -22,6 +22,7 @@ footer a{
 /* PAGINA INICIO SESION */
 .form-container{ /* bloque formulario completo */
     margin: auto;
+    width: auto;
     text-align: center;
     padding: 20px;
     max-width: 470px;
@@ -29,6 +30,8 @@ footer a{
     border: 1px solid;
     border-radius: 12px;
 }
+
+
 .froglog{ /* margen inferior de img logo */
     margin-bottom: 5px;
     margin-top: 10px;
@@ -112,16 +115,15 @@ input[type=email],[type=password],[type=text]{ /* estilos imputs redondeados */
           display: none;
       }
       .sesion {
-          margin-bottom: 15px;
+          display: none;
       }
       .regis a {
           display: flex;
           justify-content: center;
           margin-top: 19px;
       }
+
   }
-
-
 
   /* PAGINA REGISTRO */
 .sign{
