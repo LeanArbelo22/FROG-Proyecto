@@ -4,8 +4,10 @@
   "description": "'Proyecto cursada: pagina envios FROG'",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^5.0.2",
     "bootstrap-icons": "^1.5.0",
+    "express": "^4.17.1",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.10"
   },

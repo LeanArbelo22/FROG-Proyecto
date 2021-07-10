@@ -1,9 +1,10 @@
 console.log('App iniciada correctamente');
 
 const pass = require('./usuario');
+const mysql = require('mysql2');
+const http = require('http');
 
-var mysql = require('mysql2');
-var conexion = mysql.createConnection({
+const conexion = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: pass.getPass(),
@@ -49,6 +50,55 @@ conexion.query('Select fullName, frogCard, email, puntos from usuarios inner joi
     result.forEach(resultado => {
         console.log('Prueba de query INNER JOIN:', resultado)
     })
-})
+});
 
-conexion.end();
+// creando modulo http servidor
+const servidor = http.createServer((request,response) =>{
+    conexion.query('Select fullName, frogCard from usuarios', function (error, result){
+        if(error){
+            console.log('Error en la conexion a query: ' + error.stack);
+            return;
+        }
+
+        //creando string para mostrar bd en frontend
+        let frogName = '';
+        result.forEach(resultado => {
+            frogName += `<div>Nombre de socio: ${resultado.fullName} - FrogCard numero: ${resultado.frogCard}</div>`
+        });
+
+        const peticionURL = request.url;
+
+        response.writeHead(200, {'Content-Type': 'text-html'});
+
+        response.write(`<html>
+        <head>
+        <title> Proyecto con NODE.js </title>
+        </head> 
+        <body>
+        <p> Creando un servidor y trayendo informacion de la base de datos: ${frogName}</p>
+        <hr>
+        ${(peticionURL === '/envios') ? 'Pagina de envios' : 'Pagina de locales'}
+        <hr>
+        <h1>Nuestra pagina es: ${peticionURL}</h1>
+        </body>
+        </html>`
+        );
+
+        response.end();
+    });
+    conexion.end();
+});
+
+servidor.listen(4000);
+console.log('Servidor web inicializado')
+
+
+
+
+
+
+
+
+
+
+
