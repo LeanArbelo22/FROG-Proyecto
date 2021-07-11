@@ -16,15 +16,13 @@ function agregarProducto(nombre, precio){
 
     document.getElementById('total-productos').innerHTML = `${totalProductos}`
 }
-
-var totalCompra = 0;
-
+let totalCompra;
 function mostrarProductos(){
 
     const compra = document.getElementById('carrito');
     let lista = '';
     
-
+    totalCompra = 0;
     carrito.forEach(function (articulosCarrito){
         lista += '<li style= "font-size: 18px">' + articulosCarrito.nombre + ' ' + `$${articulosCarrito.precio}` +'</li>';
         totalCompra = totalCompra + articulosCarrito.precio;
