@@ -1,8 +1,35 @@
 const express = require('express');
+const mysql = require('mysql2');
 const app = express();
-const bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
+//conexion a la base de datos
+const mysqlConfig = require('../config/config')
+const connection = mysql.createConnection(mysqlConfig);
+
+//prueba de funcionamiento de conexion
+connection.connect(function (error){
+    if (error){
+        console.log('Error en la conexion: ' + error.stack);
+        return;
+    }
+    console.log('Base de datos conectada correctamente');
+});
+
+// para usar el body de postman
+app.use(express.json());
+
+app.get('/frogUser', (req, res) => {
+
+    connection.query('Select nroUser, email, frogCard from usuarios', (error,resultado) => {
+        if (error){
+            console.error(error);
+            return;
+        };
+
+        res.json(resultado);
+    });
+});
+
 
 app.get('/',function(req,resp){
     const admins = [
@@ -54,22 +81,10 @@ app.get('/login',function(req,resp){
     };
 
     resp.send(genteFiltrada);//muestra solo las coincidencias con la lista y las imprime
-
-    /* const respExito = {
-        success: true,
-        message: 'Inicio de sesion exitoso'
-    } */
-    /* const variableJSON = JSON.stringify(admins);
-    const objetoJS = JSON.parse(variableJSON);
-    console.log(variableJSON);
-    console.log(objetoJS);
-    console.log('Se ejecuto el index');;
-    resp.send(variableJSON);
- */
 });
 
 app.post('/login',function(req,resp){
-    const body = req.body;
+    const body = req.body; // requiere express.json
     console.log(body);
     gente.push(body.NAMES)
     resp.json({ message:"Persona ingresada correctamente", cantidadTotal: gente.length});
@@ -88,6 +103,6 @@ app.delete('/login',function(req,resp){
     resp.json({message: 'Persona eliminada correctamente', cantidadTotal: gente.length});
 });
 
-app.listen(4000, () => {-
+app.listen(4000, () => {
     console.log('Aplicacion express iniciada correctamente');
-})
+});

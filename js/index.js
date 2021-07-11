@@ -1,16 +1,12 @@
 console.log('App iniciada correctamente');
 
-const pass = require('./usuario');
+/* const pass = require('./usuario'); */
 const mysql = require('mysql2');
 const http = require('http');
+const mysqlConfig = require('../config/config');
 
-const conexion = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: pass.getPass(),
-    database: 'FROG'
-});
-
+const conexion = mysql.createConnection(mysqlConfig);
+/* 
 conexion.connect(function (error){
     if (error){
         console.log('Error en la conexion: ' + error.stack);
@@ -28,7 +24,7 @@ conexion.query('Select nroUser, email, frogCard, barrio, nroSocio from usuarios'
     result.forEach(resultado => {
         console.log('Prueba de conexion a query:', resultado);
     })
-});
+}); */
 
 // view usuario
 conexion.query('Select * from usuario', function (error, result){
