@@ -1,18 +1,23 @@
 {
   "name": "frog_1.1",
   "version": "1.0.0",
+  "private": true,
   "description": "'Proyecto cursada: pagina envios FROG'",
-  "main": "index.js",
   "dependencies": {
     "bootstrap": "^5.0.2",
     "bootstrap-icons": "^1.5.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.2",
     "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.10"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
