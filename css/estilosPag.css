@@ -91,12 +91,12 @@ li i:hover{
 }
 .verMapa a{
     font-weight: 700;
-    color: white;
+    color: rgb(0, 129, 17);
     text-shadow: 1px 1px 1px black;
     background-color: rgba(34, 34, 34, 0.877);
 }
 .verMapa a:hover{
-    color: #45BB3A;
+    color :#45BB3A;
 }
 /* mediaquerys navbar y footer */
 @media screen and (max-width:768px) {
