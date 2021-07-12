@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<head>
+    <title>FROG Maxishop</title>
+    <link rel= "icon" type= "image/x-icon" href="./img/favicon.ico">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilosPag.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  
+    <nav class="navbar container-fluid sticky-top navbar-expand navv">
+        <div class="container">
+        
+            <a class="navbar-brand" href="./index.html">
+                <img class="lgo" src="./img/logo_frog.png" width="150" heigth="800"alt="froglogo">
+            </a>
+            
+            <ul class="navbar-nav lista">
+              <!-- icono pc -->
+                <li class="nav-item item me-1">
+                    <a class="nav-link" href="./index.html" style="color:white; font-weight: 450"><i class="bi bi-house-door">  Locales</i></a>
+                </li>
+                <!-- icono movil y tablet -->
+                <li class="nav-item d-md-none me-1">
+                  <a class="nav-link" href="./index.html#locales" style="color:white"><i class="bi bi-house-door"></i></a>
+              </li>
+                <!-- icono pc -->
+                <li class="nav-item item me-1 ms-1">
+                    <a class="nav-link" href="./envios.html" style="color: white; "><i class="bi bi-cart2">  Envios</i></a>
+                </li>
+                <!-- icono para tablet y movil -->
+                <li class="nav-item d-md-none me-1 ms-1">
+                  <a class="nav-link" href="./envios.html" style="color: white;"><i class="bi bi-cart2"></i></a>
+              </li>
+              <!-- icono pc -->
+                <li class="nav-item item me-1 ms-1">
+                    <a class="nav-link" href="./login.html" style="color: white; "><i class="bi bi-person-lines-fill">  FrogCard</i></a>
+                </li>
+                <!-- icono tablet y movil -->
+                <li class="nav-item d-md-none me-1 ms-1">
+                  <a class="nav-link" href="./login.html" style="color: white; "><i class="bi bi-person-lines-fill"></i></a>
+              </li>
+
+                <li class="dropdown">
+                    <button class="btn dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!-- <i class="bi bi-chat-left-text"></i> -->
+                        <i class="bi bi-list" style="font-weight: 700;"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Trabaja con nosotros</a>
+                      <a class="dropdown-item" href="#">Contacto</a>
+                      <a class="dropdown-item" href="./frogcard.html">Puntos</a>
+                    </div>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container locales">
+      <section id="locales"><h2 >Locales</h2></section>
+        <div class="row d-flex justify-content-around">
+            <div class="card col-auto" style="width: 270px;">
+                <img class="card-img-top" src="./img/Screenshot-20210504091713-684x386.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">FROG 8</h5>
+                </div>
+                <ul class="list-group list-group-flush info">
+                  <li class="list-group-item">Horario: 7hs - 23hs</li>
+                  <li class="list-group-item"><a href="tel:+59824095049">24095049</a> </li>
+                  <li class="list-group-item"><button class="btn verMapa" onclick="mapas(8)"><a href="#mapita">Perez Castellanos 1479</a></button></li> 
+                </ul>
+                <div class="card-body">              
+                </div>
+              </div>
+                
+          <div class="card  col-auto" style="width: 270px;">
+            <img class="card-img-top" src="./img/F13.JPG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">FROG 13</h5>
+            </div>
+            <ul class="list-group list-group-flush info">
+              <li class="list-group-item">Horario: 8hs - 23hs</li>
+              <li class="list-group-item"><a href="tel:+59824095055">24095055</a> </li>
+              <li class="list-group-item"><button class="btn verMapa" onclick="mapas(13)"><a href="#mapita">Carlos Quijano 1309</a></button></li>
+            </ul>
+            <div class="card-body">
+            </div>
+          </div>
+          <div class="card  col-auto" style="width: 270px;">
+            <img class="card-img-top" src="./img/F15_fachada.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">FROG 15</h5>
+            </div>
+            <ul class="list-group list-group-flush info">
+              <li class="list-group-item">Horario: 7.30hs - 23hs</li>
+              <li class="list-group-item"><a href="tel:+59824095050">24095050</a></li>
+              <li class="list-group-item"><button class="btn verMapa" onclick="mapas(15)"><a href="#mapita">Constituyente 1788</a></button></li>
+            </ul>
+            <div class="card-body">
+            </div>
+          </div>        
+          <div class="card  col-auto" style="width: 270px;">
+            <img class="card-img-top" src="./img/DSC_3268.jpg" height="137" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">FROG 22</h5>
+            </div>
+            <ul class="list-group list-group-flush info">
+              <li class="list-group-item">Horario: 7.30hs - 23hs</li>
+              <li class="list-group-item"><a href="tel:+59824095053">24095053</a></li>
+              <li class="list-group-item"><button class="btn verMapa" onclick="mapas(22)"><a href="#mapita">Avda. Bolivia 1595
+              </a></button></li>
+            </ul>
+            <div class="card-body">
+            </div>
+            </div>
+          </div>
+          <span class="d-flex justify-content-center" id="mapita"></span>         
+        </div>
+
+    </main>
+
+<footer id="fot" class="container-fluid" style="position: static; bottom: 0; width: 100%">
+  <div class="container">
+      <div class="col pt-4"></div>
+      <div	class="row ms-md-5 ms-sm-1">
+        <div	class="col-3 news-mail">
+          <input type="email" id="email" class="corr form-control"/>
+          <label class="form-label labb" for="email" aria-placeholder="Correo Electronico">Correo Electronico</label>
+        </div>
+        <div	class="col-3	ml-1 news-mail">
+          <button type="submit" class="btn btn-outline-light p-2 mb-2" style="font-size: 12px; background-color: #45BB3A; font-weight: 400;">
+            Suscribete a nuestro newsletter
+        </button>
+        </div>
+        <div class="separador col-4 col-md-2"></div>
+        <div	class="col-4 d-inline-flex justify-content-center d-md-inline mt-1 mb-1 ">
+          <a class="btn btn-outline-light btn-floating ml-1" href="https://www.facebook.com/FrogMaxishop/" role="button"
+          ><i class="bi bi-facebook"></i></a>
+        <a class="btn btn-outline-light btn-floating ml-1 " href="https://www.instagram.com/frogmaxishop/" role="button"
+          ><i class="bi bi-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating ml-1" href="https://goo.gl/maps/bZ3P3T7Wf7TDgEbD7" role="button"
+          ><i class="bi bi-map"></i></a>
+        </div>
+    </div>
+
+          <div class="text-center leandro"><a href="https://www.instagram.com/leaarbelo">© Leandro Arbelo</a></div>
+  
+        </div>
+  </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./js/codigo.js"></script>
+
+</body>
+
+</html>
