@@ -4,4 +4,4 @@ bin/
 routes/
 views/
 app.js
-public/
+js/

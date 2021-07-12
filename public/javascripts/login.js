@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql2');
 const app = express();
 
-const mysqlConfig = require('../config/config');
+const mysqlConfig = require('../../config/config');
 const connection = mysql.createConnection(mysqlConfig);
 // prueba de funcionamiento
 connection.connect( (error) => {

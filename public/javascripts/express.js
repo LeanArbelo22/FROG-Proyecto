@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const app = express();
 
 //conexion a la base de datos
-const mysqlConfig = require('../config/config')
+const mysqlConfig = require('../../config/config')
 const connection = mysql.createConnection(mysqlConfig);
 
 //prueba de funcionamiento de conexion

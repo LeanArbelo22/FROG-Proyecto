@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FROG Maxishop</title>
-    <link rel= "icon" type= "image/x-icon" href="./img/favicon.ico">
+    <link rel= "icon" type= "image/x-icon" href="./images/favicon.ico">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilosPag.css">
+    <link rel="stylesheet" href="./stylesheets/estilosPag.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
+<body>
+  
     <nav class="navbar container-fluid sticky-top navbar-expand navv">
         <div class="container">
         
             <a class="navbar-brand" href="./index.html">
-                <img class="lgo" src="./img/logo_frog.png" width="150" heigth="800"alt="froglogo">
+                <img class="lgo" src="./images/logo_frog.png" width="150" heigth="800"alt="froglogo">
             </a>
             
             <ul class="navbar-nav lista">
@@ -54,16 +56,77 @@
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item" href="#">Trabaja con nosotros</a>
                       <a class="dropdown-item" href="#">Contacto</a>
+                      <a class="dropdown-item" href="./frogcard.html">Puntos</a>
                     </div>
                   </li>
             </ul>
         </div>
     </nav>
-<main class="container frogui">
-  <img src="./img/tarjetaPuntos.jpg" id="func-puntos" alt="">
-</main>
 
-<footer id="fot" class="container-fluid" style="position: fixed; bottom: 0; width: 100%">
+    <main class="container locales">
+      <section id="locales"><h2 >Locales</h2></section>
+        <div class="row d-flex justify-content-around">
+            <div class="card col-auto" style="width: 270px;">
+                <img class="card-img-top" src="./images/Screenshot-20210504091713-684x386.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">FROG 8</h5>
+                </div>
+                <ul class="list-group list-group-flush info">
+                  <li class="list-group-item">Horario: 7hs - 23hs</li>
+                  <li class="list-group-item"><a href="tel:+59824095049">24095049</a> </li>
+                  <li class="list-group-item"><button class="btn verMapa" onclick="mapas(8)"><a href="#mapita">Perez Castellanos 1479</a></button></li> 
+                </ul>
+                <div class="card-body">              
+                </div>
+              </div>
+                
+          <div class="card  col-auto" style="width: 270px;">
+            <img class="card-img-top" src="./images/F13.JPG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">FROG 13</h5>
+            </div>
+            <ul class="list-group list-group-flush info">
+              <li class="list-group-item">Horario: 8hs - 23hs</li>
+              <li class="list-group-item"><a href="tel:+59824095055">24095055</a> </li>
+              <li class="list-group-item"><button class="btn verMapa" onclick="mapas(13)"><a href="#mapita">Carlos Quijano 1309</a></button></li>
+            </ul>
+            <div class="card-body">
+            </div>
+          </div>
+          <div class="card  col-auto" style="width: 270px;">
+            <img class="card-img-top" src="./images/F15_fachada.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">FROG 15</h5>
+            </div>
+            <ul class="list-group list-group-flush info">
+              <li class="list-group-item">Horario: 7.30hs - 23hs</li>
+              <li class="list-group-item"><a href="tel:+59824095050">24095050</a></li>
+              <li class="list-group-item"><button class="btn verMapa" onclick="mapas(15)"><a href="#mapita">Constituyente 1788</a></button></li>
+            </ul>
+            <div class="card-body">
+            </div>
+          </div>        
+          <div class="card  col-auto" style="width: 270px;">
+            <img class="card-img-top" src="./images/DSC_3268.jpg" height="137" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">FROG 22</h5>
+            </div>
+            <ul class="list-group list-group-flush info">
+              <li class="list-group-item">Horario: 7.30hs - 23hs</li>
+              <li class="list-group-item"><a href="tel:+59824095053">24095053</a></li>
+              <li class="list-group-item"><button class="btn verMapa" onclick="mapas(22)"><a href="#mapita">Avda. Bolivia 1595
+              </a></button></li>
+            </ul>
+            <div class="card-body">
+            </div>
+            </div>
+          </div>
+          <span class="d-flex justify-content-center" id="mapita"></span>         
+        </div>
+
+    </main>
+
+<footer id="fot" class="container-fluid" style="position: static; bottom: 0; width: 100%">
   <div class="container">
       <div class="col pt-4"></div>
       <div	class="row ms-md-5 ms-sm-1">
@@ -97,8 +160,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="./js/codigo.js"></script>
-
+<script src="./javascripts/codigo.js"></script>
+<script src="./javascripts/express.js"></script>
 </body>
 
 </html>
