@@ -1,10 +1,7 @@
 # FROG-Proyecto
 
-Error al cargar pagina en GitHub, solo carga index.
-Cambio index a la pagina principal y este a login.html.
+LEANDRO ARBELO.
 
-Solucionado error: faltaba poner ./ en las anclas.
-Responsive de main index realizado.
-
-Solucionado error de navbar al bajar de los 400px: el padding del logo corria los demas elementos.
-Pendiente pagina index: Estilo de las cartas, Responsive de elementos del footer.
+Para mi proyecto lo que intente hacer es una pagina de envios para la empresa en la que trabajo.
+Los temas aplicados en el proyecto son: HTML, Css, Bootstrap, JS, Node.js, mysql.
+Cree una aplicacion con express-generator  (con html, no hbs ni otro motor de vista) pero no pude hacerla funcionar en Heroku. Como cree la aplicacion y el index ya no se encuentra en la raiz del proyecto tuve que crear uno con un boton que lo redireccione al index del proyecto como tal, porque si no no iba a poderse visualizar en GitHub.
