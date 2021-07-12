@@ -31,58 +31,6 @@ app.get('/frogUser', (req, res) => {
 });
 
 
-app.get('/',function(req,resp){
-    const admins = [
-        'Lean',
-        'Berni',
-        'Nico',
-        'Dani'
-    ];
-    const variableJSON = JSON.stringify(admins);
-    const objetoJS = JSON.parse(variableJSON);
-    console.log(variableJSON);
-    console.log(objetoJS);
-    console.log('Se ejecuto el index');;
-    resp.send(variableJSON);
-});
-
-app.post('/', function (req,resp){
-    resp.send('Esto es un POST')
-});
-app.put('/', function (req,resp){
-    resp.send('Esto es un PUT')
-});
-app.delete('/', function (req,resp){
-    resp.send('Esto es un DELETE')
-})
-app.get('/envios',function(req,resp){
-    console.log('Se ejecuto envios');
-    resp.send('PAGINA CON EXPRESS: "Envios"');
-});
-
-let gente = [
-    'Lean',
-    'Berni',
-    'Nico',
-    'Dani'
-];
-
-app.get('/login',function(req,resp){
-    const filtroNombre = req.query.NAMES; //nombres que le demos por postman
-    console.log(filtroNombre);
-
-    let genteFiltrada;
-    if(filtroNombre) {
-        genteFiltrada = gente.filter(g => { //filtro de gente que solo este en la lista
-        return g === filtroNombre;
-        });
-    } else {
-        genteFiltrada = gente; // si en gente filtrada no hay resultado mostrar gente
-    };
-
-    resp.send(genteFiltrada);//muestra solo las coincidencias con la lista y las imprime
-});
-
 app.post('/login',function(req,resp){
     const body = req.body; // requiere express.json
     console.log(body);
